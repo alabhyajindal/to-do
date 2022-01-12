@@ -65,6 +65,7 @@ li {
 ion-icon {
   color: red;
   cursor: pointer;
+  font-size: 27px;
 }
 
 /* TODO LIST */

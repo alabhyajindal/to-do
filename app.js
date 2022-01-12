@@ -12,12 +12,13 @@ function addMore() {
   ul.appendChild(li);
 
   document.getElementById("text-entry").value = "";
-
-  let x = document.querySelector("ion-icon");
-
-  // Removing list items on click
-
-  x.addEventListener("click", () => {
-    x.parentElement.remove();
-  });
 }
+
+let ul = document.querySelector("ul");
+
+ul.addEventListener("click", () => {
+  let x = document.querySelector("ion-icon");
+  x.addEventListener("click", () => {
+    x.parentNode.remove();
+  });
+});
