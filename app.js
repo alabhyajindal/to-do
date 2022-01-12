@@ -9,10 +9,6 @@ function addMore() {
     "beforeend",
     '<ion-icon name="close-outline"></ion-icon>'
   );
-  li.insertAdjacentHTML(
-    "afterbegin",
-    '<ion-icon name="checkmark-outline"></ion-icon>'
-  );
   ul.appendChild(li);
 
   document.getElementById("text-entry").value = "";

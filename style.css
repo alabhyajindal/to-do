@@ -58,7 +58,7 @@ section {
 li {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 0.5rem 1rem;
 }
 
@@ -70,7 +70,6 @@ ion-icon {
 
 ion-icon[name="close-outline"] {
   color: red;
-  margin-left: auto;
 }
 
 ion-icon[name="checkmark-outline"] {
