@@ -55,6 +55,18 @@ section {
   outline: none;
 }
 
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+ion-icon {
+  color: red;
+  cursor: pointer;
+}
+
 /* TODO LIST */
 
 .todo-list {

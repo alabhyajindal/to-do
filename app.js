@@ -1,17 +1,15 @@
-// ASSIGNING GLOBAL VARIABLES
-const add = document.querySelector(".add");
-const newTask = document.querySelector(".text-entry");
+function addMore() {
+  let newTask = document.getElementById("text-entry").value;
 
-const ul = document.querySelector(".todo-list");
-const li = document.createElement("li");
+  let ul = document.getElementById("todo-list");
+  let li = document.createElement("li");
+  li.textContent = newTask;
 
-li.appendChild(document.createTextNode("value"));
-
-// EVENT LISTENER ON BUTTON CLICK
-add.addEventListener("click", () => {
-  console.log(newTask.value);
+  li.insertAdjacentHTML(
+    "beforeend",
+    '<ion-icon name="close-outline"></ion-icon>'
+  );
   ul.appendChild(li);
-});
 
-// get input from user
-// display it back on the page
+  document.getElementById("text-entry").value = "";
+}

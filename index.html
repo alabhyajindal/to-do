@@ -14,15 +14,23 @@
         <h1>To Do</h1>
       </section>
       <section class="add-todo">
-        <input placeholder="Add a task" class="text-entry" />
-        <button class="btn add">Add</button>
+        <input placeholder="Add a task" class="text-entry" id="text-entry" />
+        <button class="btn add" onclick="addMore()">Add</button>
       </section>
       <section class="tasks">
-        <ul class="todo-list">
-          <li id="default">Nothing to do.</li>
-        </ul>
+        <ul class="todo-list" id="todo-list"></ul>
       </section>
     </div>
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
     <!-- JS -->
     <script src="./app.js"></script>
   </body>
