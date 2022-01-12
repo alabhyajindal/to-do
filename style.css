@@ -58,14 +58,23 @@ section {
 li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0.5rem 1rem;
 }
 
 ion-icon {
-  color: red;
   cursor: pointer;
   font-size: 27px;
+  padding: 1rem;
+}
+
+ion-icon[name="close-outline"] {
+  color: red;
+  margin-left: auto;
+}
+
+ion-icon[name="checkmark-outline"] {
+  color: green;
 }
 
 /* TODO LIST */
