@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: large;
+  max-width: 25rem;
+  margin: auto;
+}
+
+section {
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.header {
+  font-weight: 700;
+}
+
+.add-task {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.add {
+  background-color: #228be6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.text-entry {
+  padding: 0.5rem 1rem;
+  border: solid lightgray;
+  border-radius: 5px;
+  width: 20rem;
+}
+
+.text-entry:focus {
+  border: solid #228be6;
+  outline: none;
+}
+
+.todo-list {
+  list-style: none;
+}
